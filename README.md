@@ -3,6 +3,7 @@
 
 ### (Unsupported)
 
+
 ## Bluetooth Proxy tool
 
 [Walkthrough](https://conorpp.com/proxying-bluetooth-devices-for-security-analysis-using-btproxy)
@@ -27,6 +28,13 @@ For a debian system, run
 
 ```bash
 sudo apt-get install bluez bluez-tools libbluetooth-dev python-dev
+```
+** Note! If you get an error that python-dev is not found, install python3-dev instead
+
+### Clone the repo
+Clone the repo to keep moving forward
+```bash
+git clone https://github.com/blueberrymuffin3/btproxy
 ```
 
 ### Installation
