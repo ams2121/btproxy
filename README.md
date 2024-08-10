@@ -35,6 +35,30 @@ sudo apt-get install bluez bluez-tools libbluetooth-dev python-dev
 sudo python setup.py install
 ```
 
+### Solving Errors
+
+If you get the error
+```bash
+Running PyBluez-0.23/setup.py -q bdist_egg --dist-dir /tmp/easy_install-x5ssd_26/PyBluez-0.23/egg-dist-tmp-5w6b8vm2
+error: Setup script exited with error in PyBluez setup command: use_2to3 is invalid.
+```
+
+You can fix the error by installing PyBluez from source.
+* Note, as of August 2024 and python 3.11.2, PyBluz appears to be no longer in development, however it does still appear to work.
+
+Clone the repository
+```bash
+git clone https://github.com/pybluez/pybluez.git
+```
+
+Install this version of PyBluez
+```bash
+sudo python setup.py install
+```
+
+Btproxy should now work
+
+
 ### Running
 
 To run a simple MiTM or proxy on two devices, run
